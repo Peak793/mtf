@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .bg-dark{
-	background-color: #4f868c!important;
+	background-color: #000000 !important;
 }
 
 #cart-icon{
@@ -97,3 +97,37 @@ h1,h2,h3,h4,h5,h6{
 .hidden{
 	display: none!important;
 }
+
+.carousel-item{
+	height : 500px;
+	
+}
+.carousel-image-1{
+	background-image: url('/static/image01/0001.jpg');
+
+}
+.carousel-image-2{
+	background-image: url('/static/image01/0002.jpg');
+
+}
+.carousel-image-3{
+	background-image: url('/static/image01/0003.jpg');
+
+}
+
+
+.dropdown-item:active{
+	background-color: rgb(233, 10, 10);
+}
+.Logo{
+	max-width: 1000px;
+	width: 55x;
+	height: 55px;
+	margin:0 auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-left: 430px;
+
+}
+

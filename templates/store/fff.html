@@ -1,6 +1,7 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
+
 <section id="slider">
     <div class="carousel slide" data-bs-ride="carousel" id="mySlider">
         <ol class="carousel-indicators">
@@ -42,7 +43,18 @@
          </div>
     </div>
 </section>
-<h1 class = "display-3"align="center"><font color="#000000"face="Book_Akhanake"><u>สินค้าแนะนำ</u></font></h1>
+<h1 class = "display-d3"align="center"><font color="#000000"face="30106_Bluemoon_SemesterOpen"><u>สินค้าแนะนำ</u></font></h1>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      ราคาสินค้า
+    </button> 
+    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <li><a class="dropdown-item" href="#">เรียงจากถูกที่สุด</a></li>
+      <li><a class="dropdown-item" href="#">เรียงจากแพงที่สุด</a></li>
+    </ul>
+  </div>
+</div>
 <div class='row'>
     <div class='col-lg-4'>
         <img class='thumbnail' src="{% static 'image01/edit01.png' %}">
@@ -51,7 +63,9 @@
             <hr>
             <button class='btn btn-outline-secondary add-btn'>Add to Cart</button>
             <a class="btn btn-outline-success" href='#'>View All</a>
+            <button class ="btn btn-outline-dark"><i class="far fa-heart fa-1.4x"></i></button>
             <h4 style="display: inline-block'; float:right"><strong>฿599</strong></h4>
+            
         </div>
     </div>
     <div class='col-lg-4'>
@@ -62,6 +76,7 @@
 
             <button class='btn btn-outline-secondary add-btn'>Add to Cart</button>
             <a class="btn btn-outline-success" href='#'>View All</a>
+            <button class ="btn btn-outline-dark"><i class="far fa-heart fa-1.4x"></i></button>
             <h4 style="display: inline-block'; float:right"><strong>฿599</strong></h4>
         </div>
     </div>
@@ -73,6 +88,7 @@
 
             <button class='btn btn-outline-secondary add-btn'>Add to Cart</button>
             <a class="btn btn-outline-success" href='#'>View All</a>
+            <button class ="btn btn-outline-dark"><i class="far fa-heart fa-1.4x"></i></button>
             <h4 style="display: inline-block'; float:right"><strong>฿599</strong></h4>
         </div>
     </div>
