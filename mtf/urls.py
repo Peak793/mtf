@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from app import views
 
+from django.conf.urls.static import static
+from django.conf import settings
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.store, name='store'),
@@ -30,3 +33,7 @@ urlpatterns = [
     path('acc/', views.acc, name='acc'),
 ]
 
+<<<<<<< HEAD
+=======
+urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+>>>>>>> 82d60c2954240d6e685e90462e69b20a38375429
