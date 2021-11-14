@@ -33,7 +33,4 @@ urlpatterns = [
     path('acc/', views.acc, name='acc'),
 ]
 
-<<<<<<< HEAD
-=======
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
->>>>>>> 82d60c2954240d6e685e90462e69b20a38375429
